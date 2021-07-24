@@ -10,14 +10,14 @@ before_install:
 script:
   - docker run -e CI=true reactwebapp npm run test -- --coverage
 
-  deploy:
-    provider: elasticbranstalk
-    region: "ap-southeast-1"
-    app: "reactwebapp"
-    env: "Reactwebapp-env"
-    bucket_name: "elasticbeanstalk-ap-southeast-1-180601101029"
-    bucker_path: "reactwebapp"
-    on:
-      branch: master
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
+deploy:
+  provider: elasticbranstalk
+  region: "ap-southeast-1"
+  app: "reactwebapp"
+  env: "Reactwebapp-env"
+  bucket_name: "elasticbeanstalk-ap-southeast-1-180601101029"
+  bucker_path: "reactwebapp"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
