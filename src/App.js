@@ -9,6 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>update by dev</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -16,14 +17,6 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-        <a
-          className="App-link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          update by dev
         </a>
       </header>
     </div>
